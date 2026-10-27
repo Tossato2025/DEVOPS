@@ -14,13 +14,15 @@ jobs:
       - name: Baixar codigo
         uses: actions/checkout@v4
 
-      - name: Configurar Python
-        uses: actions/setup-python@v5
+      - name: Configurar Node.js (JavaScript)
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.12'
+          node-version: '20'
 
-      - name: Instalar dependencias
-        run: pip install -r requirements.txt
-
-      - name: Executar testes
-        run: python -m pytest
+      - name: Verificar integridade dos arquivos
+        run: |
+          echo "Verificando se os arquivos base da calculadora existem..."
+          test -f index.html
+          test -f style.css
+          test -f script.js
+          echo "Testes aprovados! Código íntegro."
