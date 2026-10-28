@@ -6,7 +6,7 @@ Este projeto é uma aplicação de Calculadora Padrão desenvolvida com HTML, CS
 
 1. Clone este repositório:
    ```bash
-   git clone <URL_DO_REPOSITORIO>
+   git clone https://github.com/Tossato2025/DEVOPS
    ```
 2. Abra o arquivo `index.html` em seu navegador. Nenhuma instalação ou servidor complexo é necessário.
 
